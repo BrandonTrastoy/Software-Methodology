@@ -1,0 +1,150 @@
+Test Cases for Instate Class:
+
+Will be using the two instate students
+	Student1:
+		first name = Brandon
+		last name = T
+		credits = 15
+		funds = 0
+
+	Student2: 
+		first name = Kyle
+		last name = V
+		credits = 18
+		funds = 500
+
+1. Testing compareTo() Method:
+
+	Compare student1 to student1:
+	Output: 0
+
+	Compare student1 to student2:
+	Output: -1
+
+	Compare student2 to student1:
+	Output: 1
+
+	Compare student2 to student2:
+	Output: 0
+		
+
+2. Testing tuitionDue() Method:
+	
+	Student1
+	Output: 7936
+
+	Student2
+	Output: 7436
+
+3. Testing toString() Method:
+
+	Student1
+	Output: In-State, Brandon T, 15 credits; Funding: $ 0; 
+
+	Student2
+	Output: In-State, Kyle V, 18 credits; Funding: $ 500; 
+
+====================END OF TEST==========================
+
+Test Cases for Outstate Class:
+
+Will be using the two outstate students
+	Student1:
+		first name = Joe
+		last name = Banana
+		credits = 11
+		tristate = false
+
+	Student2: 
+		first name = George
+		last name = Washington
+		credits = 14
+		tristate = true
+
+1. Testing compareTo() Method:
+
+	Compare student1 to student1:
+	Output: 0
+
+	Compare student1 to student2:
+	Output: 1
+
+	Compare student2 to student1:
+	Output: -1
+
+	Compare student2 to student2:
+	Output: 0
+		
+
+2. Testing tuitionDue() Method:
+	
+	Student1
+	Output: 9162
+
+	Student2
+	Output: 9225
+
+3. Testing toString() Method:
+
+	Student1
+	Output: Out-State, Joe Banana, 11 credits; Tristate: false; 
+
+	Student2
+	Output: Out-State, George Washington, 14 credits; Tristate: true; 
+
+====================END OF TEST==========================
+
+Test Cases for International Class:
+
+Will be using the two International students
+	Student1:
+		first name = Mark
+		last name = Yung
+		credits = 10
+		exchange = true
+
+	Student2: 
+		first name = Raphael
+		last name = Hernandez
+		credits = 12
+		exchange = false
+
+1. Testing compareTo() Method:
+
+	Compare student1 to student1:
+	Output: 0
+
+	Compare student1 to student2:
+	Output: -1
+
+	Compare student2 to student1:
+	Output: 1
+
+	Compare student2 to student2:
+	Output: 0
+		
+
+2. Testing tuitionDue() Method:
+	
+	Student1
+	Output: 1791
+
+	Student2
+	Output: 10646
+
+3. Testing toString() Method:
+
+	Student1
+	Output: International, Mark Yung, 10 credits; Exchange Student: true; 
+
+	Student2
+	Output: International, Raphael Hernandez, 10 credits; Exchange Student: false; 
+
+====================END OF TEST==========================
+
+
+
+
+
+
+
