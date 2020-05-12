@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="570.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextField fx:id="fname" layoutX="109.0" layoutY="30.0" />
+            <Label fx:id="fname_l" layoutX="28.0" layoutY="30.0" prefHeight="27.0" prefWidth="73.0" text="First Name" />
+            <TextField fx:id="lname" layoutX="109.0" layoutY="69.0" />
+            <TextField fx:id="credit" layoutX="109.0" layoutY="113.0" />
+            <Label fx:id="lname_l" layoutX="28.0" layoutY="69.0" prefHeight="27.0" prefWidth="73.0" text="Last Name" />
+            <Label fx:id="credit_l" layoutX="28.0" layoutY="113.0" prefHeight="27.0" prefWidth="73.0" text="Credits" />
+            <Button fx:id="add" layoutX="303.0" layoutY="30.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="27.0" prefWidth="73.0" text="ADD" />
+            <Button fx:id="remove" layoutX="303.0" layoutY="69.0" mnemonicParsing="false" onAction="#removeStudent" text="REMOVE" />
+            <Button fx:id="print" layoutX="303.0" layoutY="113.0" mnemonicParsing="false" onAction="#printStudents" prefHeight="27.0" prefWidth="73.0" text="PRINT" />
+            <RadioButton fx:id="instate" layoutX="30.0" layoutY="181.0" mnemonicParsing="false" onAction="#unclickable" text="INSTATE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="studentType" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="outstate" layoutX="30.0" layoutY="217.0" mnemonicParsing="false" onAction="#unclickable" text="OUTSTATE" toggleGroup="$studentType" />
+            <RadioButton fx:id="international" layoutX="30.0" layoutY="252.0" mnemonicParsing="false" onAction="#unclickable" text="INTERNATIONAL" toggleGroup="$studentType" />
+            <CheckBox fx:id="funding" layoutX="179.0" layoutY="181.0" mnemonicParsing="false" onAction="#disableFunds" text="Funding" />
+            <CheckBox fx:id="tristate" layoutX="179.0" layoutY="217.0" mnemonicParsing="false" text="Tri-state Student" />
+            <CheckBox fx:id="exchange" layoutX="179.0" layoutY="252.0" mnemonicParsing="false" text="Exchange Student" />
+            <TextField fx:id="funding_text" disable="true" layoutX="332.0" layoutY="177.0" prefHeight="18.0" prefWidth="107.0" />
+            <TextArea fx:id="display_area" editable="false" layoutX="30.0" layoutY="285.0" prefHeight="241.0" prefWidth="422.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
