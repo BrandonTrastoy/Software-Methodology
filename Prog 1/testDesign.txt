@@ -1,0 +1,85 @@
+Test Cases for TeamMember Class (Execute Main in TeamMember class For Corresponding Output)
+
+// Initializling Members to test
+Date today = new Date("1/2/2020");
+Date differentDay = new Date("1/1/2020");
+
+TeamMember member1 = new TeamMember("Brandon", today);
+TeamMember member2 = new TeamMember("Kyle", differentDay);
+
+1. equals() 
+
+Input: 
+
+	System.out.println("Test Equals Method");
+	System.out.println(member1.equals(member2));
+	System.out.println(member1.equals(member1));
+	System.out.println(member2.equals(member2));
+	System.out.println("-- End Test --");
+
+Ouput: 
+	
+	Test Equals Method
+	false
+	true
+	true
+	-- End Test --
+
+//Spacer
+System.out.println();
+
+2. toString() 
+
+Input:
+
+	System.out.println("Test toString Method");
+	System.out.println(member1.toString());
+	System.out.println(member2.toString());
+	System.out.println("-- End Test --");
+
+Output: 
+
+	Test toString Method
+	Brandon 1/2/2020
+	Kyle 1/1/2020
+	-- End Test --
+
+//Spacer
+System.out.println();
+
+1. getStartDate() 
+
+Input: 
+
+	System.out.println("Test getStartDate Method");
+	System.out.println(member1.getStartDate());
+	System.out.println(member2.getStartDate());
+	System.out.println("-- End Test --");
+
+Output: 
+
+	Test getStartDate Method
+	1/2/2020
+	1/1/2020
+	-- End Test --
+
+Final Output From Main():
+
+	Test Equals Method
+	false
+	true
+	true
+	-- End Test --
+
+	Test toString Method
+	Brandon 1/2/2020
+	Kyle 1/1/2020
+	-- End Test --
+
+	Test getStartDate Method
+	1/2/2020
+	1/1/2020
+	-- End Test --
+
+
+
